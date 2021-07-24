@@ -11,6 +11,6 @@ sudo systemctl start mongodb-mms-automation-agent.service
 
 #Add node to cluster
 add_slave(){
-    mongo --host MASTER_IP --port 27017  --authenticationDatabase "admin" -u "admin-monitor" -p ABC@1234567 --eval 'rs.add("$ip")'
+    mongo --host MASTER_IP --port 27017  --authenticationDatabase "admin" -u "admin-monitor" -p XXXYYYZZZ--eval 'rs.add("$ip")'
 }
 add_slave
